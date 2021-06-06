@@ -18,6 +18,7 @@
 		5112A61A266CE8930017A5C3 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 5112A616266CE8920017A5C3 /* product.json */; };
 		5112A61B266CE8930017A5C3 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 5112A617266CE8930017A5C3 /* brand.json */; };
 		5112A624266CEAAE0017A5C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112A623266CEAAE0017A5C3 /* Constants.swift */; };
+		5112A627266CEBB60017A5C3 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5112A626266CEBB60017A5C3 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5112A616266CE8920017A5C3 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 		5112A617266CE8930017A5C3 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
 		5112A623266CEAAE0017A5C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5112A626266CEBB60017A5C3 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		5112A61F266CEA620017A5C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5112A629266CEBBB0017A5C3 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +139,14 @@
 				5112A623266CEAAE0017A5C3 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5112A629266CEBBB0017A5C3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5112A626266CEBB60017A5C3 /* FooterView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				5112A5FE266CE5DD0017A5C3 /* AppDelegate.swift in Sources */,
 				5112A600266CE5DD0017A5C3 /* SceneDelegate.swift in Sources */,
 				5112A602266CE5DD0017A5C3 /* ContentView.swift in Sources */,
+				5112A627266CEBB60017A5C3 /* FooterView.swift in Sources */,
 				5112A624266CEAAE0017A5C3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
