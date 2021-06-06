@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Came to Play Football
-//
-//  Created by Alan Casas on 06/06/2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
