@@ -13,6 +13,10 @@
 		5112A604266CE5E00017A5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5112A603266CE5E00017A5C3 /* Assets.xcassets */; };
 		5112A607266CE5E00017A5C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5112A606266CE5E00017A5C3 /* Preview Assets.xcassets */; };
 		5112A60A266CE5E00017A5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5112A608266CE5E00017A5C3 /* LaunchScreen.storyboard */; };
+		5112A618266CE8930017A5C3 /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 5112A614266CE8920017A5C3 /* player.json */; };
+		5112A619266CE8930017A5C3 /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 5112A615266CE8920017A5C3 /* category.json */; };
+		5112A61A266CE8930017A5C3 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 5112A616266CE8920017A5C3 /* product.json */; };
+		5112A61B266CE8930017A5C3 /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 5112A617266CE8930017A5C3 /* brand.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5112A606266CE5E00017A5C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5112A609266CE5E00017A5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5112A60B266CE5E00017A5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5112A614266CE8920017A5C3 /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		5112A615266CE8920017A5C3 /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		5112A616266CE8920017A5C3 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		5112A617266CE8930017A5C3 /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,8 @@
 		5112A5FC266CE5DD0017A5C3 /* Came to Play Football */ = {
 			isa = PBXGroup;
 			children = (
-				5112A5FD266CE5DD0017A5C3 /* AppDelegate.swift */,
-				5112A5FF266CE5DD0017A5C3 /* SceneDelegate.swift */,
-				5112A601266CE5DD0017A5C3 /* ContentView.swift */,
+				5112A61D266CE8990017A5C3 /* Data */,
+				5112A613266CE7990017A5C3 /* APP */,
 				5112A603266CE5E00017A5C3 /* Assets.xcassets */,
 				5112A608266CE5E00017A5C3 /* LaunchScreen.storyboard */,
 				5112A60B266CE5E00017A5C3 /* Info.plist */,
@@ -73,6 +80,27 @@
 				5112A606266CE5E00017A5C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5112A613266CE7990017A5C3 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				5112A5FD266CE5DD0017A5C3 /* AppDelegate.swift */,
+				5112A5FF266CE5DD0017A5C3 /* SceneDelegate.swift */,
+				5112A601266CE5DD0017A5C3 /* ContentView.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		5112A61D266CE8990017A5C3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5112A617266CE8930017A5C3 /* brand.json */,
+				5112A615266CE8920017A5C3 /* category.json */,
+				5112A614266CE8920017A5C3 /* player.json */,
+				5112A616266CE8920017A5C3 /* product.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +160,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5112A618266CE8930017A5C3 /* player.json in Resources */,
 				5112A60A266CE5E00017A5C3 /* LaunchScreen.storyboard in Resources */,
+				5112A61B266CE8930017A5C3 /* brand.json in Resources */,
+				5112A619266CE8930017A5C3 /* category.json in Resources */,
 				5112A607266CE5E00017A5C3 /* Preview Assets.xcassets in Resources */,
 				5112A604266CE5E00017A5C3 /* Assets.xcassets in Resources */,
+				5112A61A266CE8930017A5C3 /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
