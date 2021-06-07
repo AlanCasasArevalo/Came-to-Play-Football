@@ -9,3 +9,10 @@ func getCategories () -> [CategoryModel]! {
     let loadData: [CategoryModel]! = Bundle.main.decode(file: "category.json")
     return loadData
 }
+
+func getProducts () -> [ProductItemModel]! {
+    let loadData: [ProductItemModel]! = Bundle.main.decode(file: "product.json")
+    return loadData
+}
+
+

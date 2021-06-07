@@ -18,6 +18,11 @@ struct ContentView: View {
                             .padding(.vertical, 40)
 
                         CategoryGridView()
+                        
+                        ProductGridView()
+                            .padding(15)
+
+                        TitleView(title: "Helmets")
 
                         FooterView()
                             .padding(.horizontal)
