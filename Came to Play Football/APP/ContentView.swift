@@ -5,27 +5,33 @@ struct ContentView: View {
         ZStack {
             VStack (spacing: 0) {
                 NavigationCustomView()
+                    .padding(.horizontal, 15)
                     .padding(.bottom)
-                    .padding(.horizontal, 16)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                     .background(Color.white)
                     .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
-
-                Spacer()
                 
-                FooterView()
-                    .padding(.vertical)
-            }
-            .background(colorBackground.edgesIgnoringSafeArea(.all))
-        }
-        .edgesIgnoringSafeArea(.top)
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    VStack(spacing: 0) {
+                        CoverImageView()
+                            .frame(minHeight: 250)
+                            .padding(.vertical, 40)
+
+                        FooterView()
+                            .padding(.horizontal)
+                    } //: VSTACK
+                }) //: SCROLL
+                
+            } // VStack
+            .background(colorBackground.ignoresSafeArea(.all, edges: .all))
+        } // ZStack
+        .ignoresSafeArea(.all, edges: .top)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
                 .previewDevice("iPhone 11")
         }
