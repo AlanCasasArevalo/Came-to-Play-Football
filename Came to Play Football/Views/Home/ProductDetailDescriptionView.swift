@@ -1,20 +1,24 @@
-//
-//  ProductDetailDescriptionView.swift
-//  Came to Play Football
-//
-//  Created by Alan Casas on 8/6/21.
-//
-
 import SwiftUI
 
 struct ProductDetailDescriptionView: View {
+    
+    var description: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: false, content: {
+            Text(description)
+                .font(.system(.body, design: .rounded))
+                .multilineTextAlignment(.leading)
+                .foregroundColor(.gray)
+        })
+        
     }
 }
 
 struct ProductDetailDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailDescriptionView()
+        ProductDetailDescriptionView(description: getProducts()[0].description)
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
