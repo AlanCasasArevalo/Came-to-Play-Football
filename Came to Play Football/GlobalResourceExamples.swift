@@ -15,4 +15,12 @@ func getProducts () -> [ProductItemModel]! {
     return loadData
 }
 
+func getBrands () -> [BrandModel]! {
+    let loadData: [BrandModel]! = Bundle.main.decode(file: "brand.json")
+    return loadData
+}
+
+
+
+
 

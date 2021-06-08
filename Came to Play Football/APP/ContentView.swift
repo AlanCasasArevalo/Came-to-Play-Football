@@ -21,6 +21,9 @@ struct ContentView: View {
                         
                         ProductGridView()
                             .padding(15)
+                        
+                        BrandGridView()
+                            .padding(15)
 
                         TitleView(title: "Helmets")
 
