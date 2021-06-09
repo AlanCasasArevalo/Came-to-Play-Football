@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ProductDetailView: View {
     
-    var product: ProductItemModel
+    @EnvironmentObject var shopViewModel: ShopViewModel
     
     var body: some View {
         
@@ -13,10 +13,10 @@ struct ProductDetailView: View {
                     .padding(.horizontal)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                 
-                ProductDetailHeaderView(title: product.name)
+                ProductDetailHeaderView(title: shopViewModel.productSelected?.name ?? "")
                     .padding(.horizontal)
                 
-                TopProductDetailView(product: product)
+                TopProductDetailView(product: shopViewModel.productSelected ?? getProducts()[0])
                     .padding(.horizontal)
             }
             .zIndex(1)
@@ -34,7 +34,7 @@ struct ProductDetailView: View {
                  .padding(.bottom, 10)
 
                 // Description
-                ProductDetailDescriptionView(description: product.description)
+                ProductDetailDescriptionView(description: shopViewModel.productSelected?.description ?? "")
                     .padding(.all)
                 
                 HStack{
@@ -53,7 +53,7 @@ struct ProductDetailView: View {
                 }
                 
                 // Add to cart
-                ProductDetailAddToCartButtonView(backgroundColor: Color.init(red: product.red, green: product.green, blue: product.blue))
+                ProductDetailAddToCartButtonView(backgroundColor: Color.init(red: shopViewModel.productSelected?.red ?? 0, green: shopViewModel.productSelected?.green ?? 0, blue: shopViewModel.productSelected?.blue ?? 0))
                     .padding(.vertical, 10)
                     .padding(.horizontal)
 
@@ -63,20 +63,16 @@ struct ProductDetailView: View {
                     .clipShape(CustomShapeView())
                     .padding(.top, -120)
             )
-            .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom)
-            
-            Spacer()
         } // VStack
         .zIndex(0)
-        .edgesIgnoringSafeArea(.all)
-        .background(Color.init(red: getProducts()[0].red, green:  getProducts()[0].green, blue:  getProducts()[0].blue))
-        
+        .background(Color.init(red: shopViewModel.productSelected?.red ?? 0, green: shopViewModel.productSelected?.green ?? 0, blue: shopViewModel.productSelected?.blue ?? 0))
     }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView(product: getProducts()[0])
+        ProductDetailView()
+            .environmentObject(ShopViewModel())
             .edgesIgnoringSafeArea(.all)
     }
 }

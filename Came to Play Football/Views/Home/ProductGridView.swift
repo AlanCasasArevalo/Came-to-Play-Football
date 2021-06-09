@@ -1,10 +1,17 @@
 import SwiftUI
 
 struct ProductGridView: View {
+    
+    @EnvironmentObject var shopViewModel: ShopViewModel
+    
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 15, content: {
             ForEach(getProducts()) { product in
                 ProductItemView(product: product)
+                    .onTapGesture {
+                        shopViewModel.isShowingProduct = true
+                        shopViewModel.productSelected = product
+                    }
             } // ForEach
         }) //LazyVGrid
     }

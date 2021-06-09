@@ -48,6 +48,7 @@
 		519A9CB9266EAB960060BECD /* ProductItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519A9CB8266EAB960060BECD /* ProductItemModel.swift */; };
 		519A9CBB266EAED10060BECD /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519A9CBA266EAED10060BECD /* ProductGridView.swift */; };
 		519A9CBD266EB1330060BECD /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519A9CBC266EB1330060BECD /* TitleView.swift */; };
+		51E82BBE26712D2200EC7B31 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E82BBD26712D2200EC7B31 /* ShopViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		519A9CB8266EAB960060BECD /* ProductItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemModel.swift; sourceTree = "<group>"; };
 		519A9CBA266EAED10060BECD /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
 		519A9CBC266EB1330060BECD /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		51E82BBD26712D2200EC7B31 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				5112A623266CEAAE0017A5C3 /* Constants.swift */,
+				51E82BBD26712D2200EC7B31 /* ShopViewModel.swift */,
 				513FA24B266FDEE1000AF7BE /* CustomShapeView.swift */,
 			);
 			path = Utilities;
@@ -328,6 +331,7 @@
 				5112A627266CEBB60017A5C3 /* FooterView.swift in Sources */,
 				513FA23A266F9017000AF7BE /* ProductDetailHeaderView.swift in Sources */,
 				513FA236266F2E33000AF7BE /* BrandGridView.swift in Sources */,
+				51E82BBE26712D2200EC7B31 /* ShopViewModel.swift in Sources */,
 				513FA248266FD7FE000AF7BE /* ProductDetailCounterView.swift in Sources */,
 				51492DED266E89CC00A5CACD /* CodableBundle+Extension.swift in Sources */,
 				51492DEB266E89B000A5CACD /* CoverImageView.swift in Sources */,
