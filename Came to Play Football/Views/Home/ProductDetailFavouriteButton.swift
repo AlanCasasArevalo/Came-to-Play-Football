@@ -3,7 +3,8 @@ import SwiftUI
 struct ProductDetailFavouriteButton: View {
     var body: some View {
         Button(action: {
-            
+            feedback.impactOccurred()
+
         }, label: {
             Image(systemName: "heart.circle")
                 .resizable()

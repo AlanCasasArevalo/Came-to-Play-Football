@@ -8,7 +8,8 @@ struct ProductDetailCounterView: View {
        
         HStack{
             Button(action: {
-                if counter > 0 {                    
+                if counter > 0 {
+                    feedback.impactOccurred()
                     counter -= 1
                 }
             }, label: {
@@ -24,6 +25,7 @@ struct ProductDetailCounterView: View {
 
             Button(action: {
                 if counter < 100 {
+                    feedback.impactOccurred()
                     counter += 1
                 }
             }, label: {

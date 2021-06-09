@@ -7,6 +7,7 @@ struct NavigationProductDetailView: View {
     var body: some View {
         HStack {
             Button(action: {
+                feedback.impactOccurred()
                 shopViewModel.cleanProduct()
             }, label: {
                 Image(systemName: "chevron.left")
